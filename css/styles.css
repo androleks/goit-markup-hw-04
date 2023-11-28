@@ -67,14 +67,15 @@ button {
 .page-header {
   align-items: center;
   border-bottom: 1px solid var(--CORNFLOWER);
-
   background: var(--WHITE);
+
 }
 
 .page-header-container {
   display: flex;
   align-items: center;
 }
+
 .navi-main {
   display: flex;
   align-items: center;
@@ -153,9 +154,16 @@ button {
 .main-index {
   padding-top: 188px;
   padding-bottom: 188px;
-
-  background: var(--NAVY);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: var(--NAVY);  */
   justify-content: center;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 .main-index-header-text {
