@@ -78,6 +78,8 @@ button {
 .navi-main {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-list {
   display: flex;
@@ -109,15 +111,11 @@ button {
 
 .nav-menu {
   color: var(--NAVY);
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: var(--letter-spacing-text);
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-menu:hover,
@@ -135,6 +133,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  padding: 0;
   content: "";
 }
 .address-text:hover,
@@ -164,12 +163,12 @@ button {
 
 /* ===================== index.html main filling =====================*/
 .main-index {
+  display: block;
   padding-top: 188px;
   padding-bottom: 188px;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: var(--NAVY);  */
   justify-content: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -330,6 +329,7 @@ button {
 .sm-links {
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .sm-links-item {
@@ -368,6 +368,32 @@ button {
   letter-spacing: var(--letter-spacing-text);
 
   margin-bottom: 8px;
+}
+
+.clients {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.clients-header {
+  color: var(--NAVY);
+  text-align: center;
+  /* Header 2 */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: var(--letter-spacing-h2);
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.clients-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.clients-cards-item {
+  width: calc((100% - 24px * 2) / 3);
 }
 
 /* ===================== index.html main filling =====================*/
@@ -507,8 +533,14 @@ footer {
   padding-bottom: 100px;
 }
 
-.footer-contain {
+.footer-container {
+  display: inline-flex;
+  gap: 120px;
 }
+.footer-contain {
+  display: block;
+}
+
 .logo-begin-down {
   display: inline-block;
   color: var(--IRIS);
@@ -540,4 +572,29 @@ footer {
   letter-spacing: var(--letter-spacing-text);
   height: 72px;
   width: 264px;
+}
+
+.footer-text-two {
+  color: var(--CLOUD);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing-text);
+  height: 24px;
+  width: 96px;
+  margin-bottom: 16px;
+}
+
+.sm-links {
+  border: 1px solid var(--CORNFLOWER);
+  border-radius: 4px;
+
+  background: var(--CLOUD);
+}
+.sm-links:hover,
+.sm-links:focus {
+  color: var(--WHITE);
+  background-color: var(--OCEAN);
+  border: 1px solid transparent;
 }
