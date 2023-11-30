@@ -117,8 +117,8 @@ button {
   padding: 24px 0;
   transition-property: color;
   transition-duration: 2000ms;
-  transition-timing-function: linear;
-  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .nav-menu:hover,
@@ -164,8 +164,8 @@ button {
   text-decoration: none;
   transition-property: color;
   transition-duration: 2000ms;
-  transition-timing-function: linear;
-  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .address-text:hover,
@@ -231,8 +231,8 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition-property: background-color;
   transition-duration: 2000ms;
-  transition-timing-function: linear;
-  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .ibutton:focus,
@@ -273,8 +273,8 @@ button {
 
   transition-property: border-radius, border, box-shadow, background-color;
   transition-duration: 2000ms;
-  transition-timing-function: linear;
-  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .features-icons-container:focus,
@@ -552,8 +552,8 @@ button {
 
   transition-property: border, color, background-color;
   transition-duration: 2000ms;
-  transition-timing-function: linear;
-  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .pbutton:hover,
@@ -583,6 +583,11 @@ button {
 
 .portfolio-cards-list-item {
   width: calc((100% - 24px * 2) / 3);
+
+  transition-property: border, color, background-color;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 250ms;
 }
 
 .portfolio-cards-list-item:hover,
@@ -627,15 +632,22 @@ button {
   transition: transform 250ms ease-in-out;
 }
 
-.box:hover .overlay {
+.portfolio-cards-list-item:hover .box .overlay {
   transform: translatey(0);
 }
 
 .overlay p {
   color: #fff;
-  padding: 10px;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing-text);
 }
 
 .overlay code {
