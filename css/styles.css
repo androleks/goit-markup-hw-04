@@ -618,13 +618,14 @@ button {
   overflow: hidden;
 }
 
-.box:hover .overlay {
-  transform: translateY(0%);
-}
-
+.box:hover .overlay,
 .box:focus .overlay {
   transform: translateY(0%);
 }
+
+/* .box:focus .overlay { */
+/* transform: translateY(0%); */
+/* } */
 
 .overlay {
   position: absolute;
@@ -843,16 +844,11 @@ footer {
   border: none;
 }
 
-.close-button-icon:hover,
-.close-button-icon:focus {
-  fill: #ffffff;
-}
-
 .close-button-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button-icon:hover,
 .close-button-icon:focus {
-  fill: #ffffff;
+  fill: var(--WHITE);
 }
