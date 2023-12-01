@@ -660,26 +660,6 @@ button {
   width: calc((100% - 24px * 2) / 3);
 }
 
-/* .portfolio-cards-list-item:hover, */
-/* .portfolio-cards-list-item:focus { */
-/* color: var(--WHITE); */
-/* background-color: var(--OCEAN); */
-/* border: 1px solid transparent; */
-/* } */
-
-/* .overlay:hover, */
-/* .overlay:focus { */
-/* transform: translateY(0%); */
-/* } */
-
-/* .overlay code { */
-/* display: inline-block; */
-/* padding: 2px 4px; */
-/* border-radius: 2px; */
-/* background-color: #fff; */
-/* color: #2a2a2a; */
-/* } */
-
 .portfolio-cards-text {
   background-color: var(--WHITE);
   padding: 32px 16px;
