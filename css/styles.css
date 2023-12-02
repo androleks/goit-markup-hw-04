@@ -525,17 +525,6 @@ button {
   margin-bottom: 72px;
 }
 
-.all-pbutton {
-  color: var(--WHITE);
-  text-align: center;
-  /* Button Text */
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: var(--letter-spacing-button-text);
-  background: var(--OCEAN);
-}
-
 .pbutton {
   color: var(--IRIS);
   text-align: center;
@@ -684,7 +673,6 @@ footer {
 }
 
 .footer-contain-1 {
-  margin-right: 120px;
 }
 
 .logo-begin-down {
@@ -724,7 +712,6 @@ footer {
   color: var(--WHITE);
 
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
